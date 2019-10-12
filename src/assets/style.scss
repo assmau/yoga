@@ -1,0 +1,42 @@
+@import "common/common";
+@import "components/header";
+@import "mixin/mixin";
+@import "variables";
+
+
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	height: 100%;
+
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+
+		.layout {
+			min-height: 100%;
+		}
+
+		.container {
+			width: 1170px;
+			margin: 0 auto;
+			overflow: hidden;
+			border: 1px solid #ccc;
+			padding: 0 15px;
+		}
+
+		.row {
+			display: -webkit-box;
+    		display: -webkit-flex;
+    		display: -ms-flexbox;
+    		display: flex;
+    		-webkit-flex-wrap: wrap;
+    		-ms-flex-wrap: wrap;
+    		flex-wrap: wrap;
+		}
+	}
+}

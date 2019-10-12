@@ -1,0 +1,25 @@
+{
+  "name": "yoga",
+  "version": "1.0.0",
+  "description": "This is test site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assmau/yoga.git"
+  },
+  "author": "Orhan Davidov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/assmau/yoga/issues"
+  },
+  "homepage": "https://github.com/assmau/yoga#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.12.0"
+  }
+}
