@@ -35,9 +35,18 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 0;
 }
 
+button {
+	background: $color-button;
+    color: $color-white;
+    width: 170px;
+    height: 45px;
+    border: none;
+}
 
 
-.x-lg {
+
+
+.col {
   -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -51,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 @for $i from 1 through 12 {
-    .x-lg-#{$i} {
+    .col-#{$i} {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 8.33333333% *$i;
         -ms-flex: 0 0 8.33333333% *$i;
@@ -62,38 +71,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+
+
+
 @media (max-width: 1170px) {
     .container {
         width: 1024px !important;
     }
-
-    @for $i from 1 through 12 {
-    	.lg-#{$i} {
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 0 8.33333333% *$i;
-            -ms-flex: 0 0 8.33333333% *$i;
-            flex: 0 0 8.33333333% *$i;
-            max-width: 8.33333333% *$i;
-            padding: 0 15px;
-    	}
-    }
+    
 }
 
 
 @media (max-width: 1024px) {
     .container {
         width: 750px !important;
-    }
-
-    @for $i from 1 through 12 {
-    	.md-#{$i} {
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 0 8.33333333% *$i;
-            -ms-flex: 0 0 8.33333333% *$i;
-            flex: 0 0 8.33333333% *$i;
-            max-width: 8.33333333% *$i;
-            padding: 0 15px;
-    	}
     }
 }
 
@@ -102,16 +93,5 @@ h1, h2, h3, h4, h5, h6, p {
 @media (max-width: 768px) {
     .container {
         width: 100% !important;
-    }
-
-    @for $i from 1 through 12 {
-    	.md-#{$i} {
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 0 8.33333333% *$i;
-            -ms-flex: 0 0 8.33333333% *$i;
-            flex: 0 0 8.33333333% *$i;
-            max-width: 8.33333333% *$i;
-            padding: 0 15px;
-    	}
     }
 }

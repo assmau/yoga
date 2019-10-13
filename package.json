@@ -18,8 +18,13 @@
   "homepage": "https://github.com/assmau/yoga#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-image": "^5.1.0",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-watch": "^5.0.1",
     "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gulp-jquery": "^1.1.2"
   }
 }
